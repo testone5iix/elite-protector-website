@@ -799,7 +799,7 @@ html[lang="en"] .plan strong::after {
 
 @media (max-width: 980px) {
   .header {
-    position: absolute;
+    position: fixed;
     grid-template-columns: 1fr auto;
   }
 
