@@ -6,6 +6,7 @@ const translations = {
     nav_docs: "الوثائق",
     nav_pricing: "الباقات",
     nav_cta: "طلب نسخة",
+    mobile_download: "تحميل النسخة",
     badge_production: "Production Ready",
     badge_commercial: "Commercial Ready",
     hero_eyebrow: "منصة حماية وتسليم تجارية",
@@ -67,9 +68,9 @@ const translations = {
     step_four_text: "راجع التقرير وأرسل الناتج.",
     pricing_eyebrow: "Pricing",
     pricing_title: "باقات بسيطة لإصدارات تجارية.",
-    starter_text: "للمشاريع الصغيرة وبداية استخدام الحماية.",
-    pro_text: "للمطورين الذين يبيعون نسخًا للعملاء بانتظام.",
-    business_text: "للفرق والمتاجر التي تحتاج تسليمات متكررة.",
+    starter_text: "للمطور الفردي والمشاريع الصغيرة.",
+    pro_text: "للبيع التجاري المنتظم وتسليم نسخ للعملاء.",
+    business_text: "للفرق والمتاجر والدعم التجاري الأسرع.",
     plan_cta: "اطلب الباقة",
     docs_eyebrow: "Docs & FAQ",
     docs_title: "معلومات يحتاجها العميل قبل الشراء.",
@@ -92,6 +93,7 @@ const translations = {
     nav_docs: "Docs",
     nav_pricing: "Pricing",
     nav_cta: "Request access",
+    mobile_download: "Download build",
     badge_production: "Production Ready",
     badge_commercial: "Commercial Ready",
     hero_eyebrow: "Commercial protection and delivery",
@@ -153,9 +155,9 @@ const translations = {
     step_four_text: "Review the report and deliver output.",
     pricing_eyebrow: "Pricing",
     pricing_title: "Simple plans for commercial releases.",
-    starter_text: "For small projects and first protected releases.",
-    pro_text: "For developers who regularly sell client builds.",
-    business_text: "For teams and stores with repeated deliveries.",
+    starter_text: "For solo developers and small projects.",
+    pro_text: "For regular commercial releases and client delivery.",
+    business_text: "For teams, stores, and faster commercial support.",
     plan_cta: "Choose plan",
     docs_eyebrow: "Docs & FAQ",
     docs_title: "What buyers need to know before purchase.",
@@ -187,6 +189,24 @@ function setLanguage(lang) {
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
+});
+
+const header = document.querySelector(".header");
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+
+if (header && menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    header?.classList.remove("menu-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
 });
 
 const observer = new IntersectionObserver((entries) => {
