@@ -28,6 +28,7 @@
       <a href="#platform" data-i18n="nav_platform">المنصة</a>
       <a href="#security" data-i18n="nav_security">الحماية</a>
       <a href="#workflow" data-i18n="nav_workflow">الإصدار</a>
+      <a href="#docs" data-i18n="nav_docs">الوثائق</a>
       <a href="#pricing" data-i18n="nav_pricing">الباقات</a>
     </nav>
 
@@ -43,11 +44,16 @@
   <main id="top">
     <section class="hero">
       <div class="hero-copy reveal">
+        <div class="hero-badges">
+          <span data-i18n="badge_production">Production Ready</span>
+          <span data-i18n="badge_commercial">Commercial Ready</span>
+        </div>
         <span class="eyebrow" data-i18n="hero_eyebrow">منصة حماية وتسليم تجارية</span>
         <h1>
-          <span data-i18n="hero_title_line1">حوّل تطبيقات Python</span>
-          <span data-i18n="hero_title_line2">إلى منتجات محمية</span>
-          <span data-i18n="hero_title_line3">جاهزة للبيع.</span>
+          <span data-i18n="hero_title_line1">حوّل تطبيقات</span>
+          <span data-i18n="hero_title_line2">Python</span>
+          <span data-i18n="hero_title_line3">إلى منتجات محمية</span>
+          <span data-i18n="hero_title_line4">جاهزة للبيع.</span>
         </h1>
         <p>
           <span class="desktop-copy" data-i18n="hero_text">Elite Python Protector يمنحك مسارًا واضحًا لحماية التطبيق، فحص الاعتماديات، تدقيق الناتج، وتجهيز نسخة أكثر احترافية لعملائك.</span>
@@ -55,7 +61,7 @@
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#pricing" data-i18n="hero_primary">ابدأ الآن</a>
-          <a class="button secondary" href="#platform" data-i18n="hero_secondary">استكشف المنصة</a>
+          <a class="button secondary" href="#download" data-i18n="hero_secondary">تحميل النسخة</a>
         </div>
       </div>
 
@@ -100,6 +106,15 @@
       <span>Dependency scan</span>
       <span>Release audit</span>
       <span>Commercial delivery</span>
+    </section>
+
+    <section id="download" class="download-panel reveal">
+      <div>
+        <span class="eyebrow" data-i18n="download_eyebrow">Stable Release</span>
+        <h2 data-i18n="download_title">نسخة جاهزة للتجربة والعرض التجاري.</h2>
+        <p data-i18n="download_text">حمّل البرنامج، افتح الواجهة، اختر ملف Python، ثم ابنِ نسخة محمية مع تقرير تدقيق واضح.</p>
+      </div>
+      <a class="button primary" href="../main.py" data-i18n="download_cta">تحميل / فتح المشروع</a>
     </section>
 
     <section id="platform" class="section platform">
@@ -147,6 +162,50 @@
           <b>03</b>
           <p data-i18n="security_three">تسليم نسخة تبدو كمنتج تجاري وليس مجرد سكربت.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="pipeline section">
+      <div class="section-title centered reveal">
+        <span class="eyebrow" data-i18n="pipeline_eyebrow">Protection Pipeline</span>
+        <h2 data-i18n="pipeline_title">مسار حماية واضح من المصدر إلى الناتج.</h2>
+      </div>
+      <div class="pipeline-steps">
+        <article class="reveal">
+          <b>01</b>
+          <h3 data-i18n="pipe_one_title">Analyze</h3>
+          <p data-i18n="pipe_one_text">فحص الملف والاستيرادات والاعتماديات قبل البناء.</p>
+        </article>
+        <article class="reveal">
+          <b>02</b>
+          <h3 data-i18n="pipe_two_title">Transform</h3>
+          <p data-i18n="pipe_two_text">تحويل الدوال والثوابت الحساسة إلى بنية أكثر صعوبة للقراءة المباشرة.</p>
+        </article>
+        <article class="reveal">
+          <b>03</b>
+          <h3 data-i18n="pipe_three_title">Package</h3>
+          <p data-i18n="pipe_three_text">تجهيز الناتج كملف محمي أو حزمة تسليم مناسبة.</p>
+        </article>
+        <article class="reveal">
+          <b>04</b>
+          <h3 data-i18n="pipe_four_title">Audit</h3>
+          <p data-i18n="pipe_four_text">مراجعة المخرجات وإظهار تقرير جودة قبل التسليم.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="before-after">
+      <div class="section-title reveal">
+        <span class="eyebrow" data-i18n="before_eyebrow">Before / After</span>
+        <h2 data-i18n="before_title">من سكربت مكشوف إلى إصدار أكثر تنظيمًا.</h2>
+      </div>
+      <div class="code-compare">
+        <pre class="reveal"><code>def premium_logic(user):
+    secret = "client-rule"
+    return calculate(secret, user)</code></pre>
+        <pre class="reveal"><code>_ep_call("f0_x9A2", user)
+_ep_const("c1")
+release_audit: passed</code></pre>
       </div>
     </section>
 
@@ -203,6 +262,27 @@
           <strong>$199</strong>
           <p data-i18n="business_text">للفرق والمتاجر التي تحتاج تسليمات متكررة.</p>
           <a href="mailto:sales@example.com?subject=Business" data-i18n="plan_cta">اطلب الباقة</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="docs" class="docs-faq section">
+      <div class="section-title centered reveal">
+        <span class="eyebrow" data-i18n="docs_eyebrow">Docs & FAQ</span>
+        <h2 data-i18n="docs_title">معلومات يحتاجها العميل قبل الشراء.</h2>
+      </div>
+      <div class="docs-grid">
+        <article class="reveal">
+          <h3 data-i18n="doc_one_title">Quick Start</h3>
+          <p data-i18n="doc_one_text">اختر ملف Python، افحص الاعتماديات، اختر Profile الحماية، ثم ابنِ الناتج.</p>
+        </article>
+        <article class="reveal">
+          <h3 data-i18n="doc_two_title">هل الحماية غير قابلة للكسر؟</h3>
+          <p data-i18n="doc_two_text">لا توجد حماية محلية مستحيلة، لكن الهدف هو رفع تكلفة التحليل وتقليل الانكشاف السهل.</p>
+        </article>
+        <article class="reveal">
+          <h3 data-i18n="doc_three_title">هل يدعم التسليم التجاري؟</h3>
+          <p data-i18n="doc_three_text">نعم، يوفر فحص اعتماديات، أنماط حماية، تدقيق مخرجات، وخيارات تسليم منظمة.</p>
         </article>
       </div>
     </section>
